@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón de Mantequilla</title>
+    <link rel="stylesheet" href="CSS.css">
+<!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--HEADER-->
+  <header>
+    <nav>
+      <div class="logo">Corazón de Mantequilla</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!--HOME-->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Bakery & 
+        Pastry<span>Made Fresh</span>Daily</h1>
+
+      <p>Dari croissant yang renyah hingga cake yang lembut, semua 
+        dibuat setiap hari untuk menghadirkan cita rasa terbaik.</p>
+
+      <a href="#menu" class="btn">Lihat Menu</a>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="C:\Users\User\Downloads\work\aw.jpg">
+    </div>
+  </section>
+
+<!--MENU-->
+  <section id="menu">
+    <div class="section-title">
+      <h2>Our Menu</h2>
+      <p>Menu pastry favorit pelanggan</p>
+    </div>
+
+    <div class="menu-container">
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\download (9).jpg">
+        <div class="menu-content">
+          <h3>Butter Croissant</h3>
+          <p>Croissant renyah dengan butter premium.</p>
+          <div class="price">Rp25.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\Chocolate Cake Slice Dessert Aesthetic _ Шоколадный торт кусочек десерт.jpg">
+        <div class="menu-content">
+          <h3>Chocolate Cake</h3>
+          <p>Kue coklat lembut dan manis.</p>
+          <div class="price">Rp35.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\donut.jpg">
+        <div class="menu-content">
+          <h3>Sweet Donut</h3>
+          <p>Donat empuk dengan topping premium.</p>
+          <div class="price">Rp18.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\macaron.jpg">
+        <div class="menu-content">
+          <h3>Macaron</h3>
+          <p>Macaron warna-warni favorit pelanggan.</p>
+          <div class="price">Rp28.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\tart.jpg">
+        <div class="menu-content">
+          <h3>Strawberry Tart</h3>
+          <p>Tart segar dengan strawberry premium.</p>
+          <div class="price">Rp32.000</div>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:\Users\User\Downloads\work\cupcake.jpg">
+        <div class="menu-content">
+          <h3>Cupcake Vanilla</h3>
+          <p>Cupcake lembut dengan cream vanilla.</p>
+          <div class="price">Rp22.000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!--ABOUT-->
+
+  <section id="about">
+    <div class="about">
+      <img src="C:\Users\User\Downloads\work\Cakery.jpg">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Corazón de Mantequilla adalah toko pastry modern yang menghadirkan
+           berbagai pilihan pastry premium dengan kualitas terbaik.
+           Website ini dibuat sebagai Project Akhir Jurusan PPLG.</p>
+      </div>
+    </div>
+  </section>
+
+<!--GALLERY-->
+  <section id="gallery">
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <p>Kumpulan pastry terbaik kami</p>
+    </div>
+
+    <div class="gallery">
+      <img src="C:\Users\User\Downloads\work\macaron.jpg">
+      <img src="C:\Users\User\Downloads\work\donut.jpg">
+      <img src="C:\Users\User\Downloads\work\tart.jpg">
+      <img src="C:\Users\User\Downloads\work\download (9).jpg">
+    </div>
+  </section>
+
+<!--CONTACT-->
+  <section id="contact">
+    <div class="section-title">
+      <h2>Order Via WhatsApp</h2>
+      <p>Isi form dibawah untuk melakukan pemesanan</p>
+    </div>
+
+    <div class="contact-container">
+      <form class="contact-form"onsubmit="sendToWhatsApp(); return false;">
+
+        <input
+          type="text"
+          id="nama"
+          placeholder="Masukkan Nama"
+          required
+        >
+
+        <input
+          type="text"
+          id="menuPesanan"
+          placeholder="Masukkan Menu Pesanan"
+          required
+        >
+
+        <input
+          type="number"
+          id="jumlah"
+          placeholder="Jumlah Pesanan"
+          required
+        >
+
+        <textarea
+          id="alamat"
+          rows="5"
+          placeholder="Masukkan Alamat"
+          required>
+        </textarea>
+
+        <button type="submit" class="btn">Pesan Sekarang</button>
+
+      </form>
+    </div>
+  </section>
+
+<!--FOOTER-->
+  <footer><p>© 2026 Corazón de Mantequilla |  Natasya D.R</p></footer>
+  <script src="JS.js"></script>
+
+</body>
+</html>
